@@ -36,8 +36,6 @@ function resetarSelecao() {
   document.getElementById('ponte-grossa-esquerda').value = '-----';
   document.getElementById('ponte-grossa-direita').value = '-----';
   
-
-  // Ocultar todas as imagens de sobreposição
   for (var i = 1; i <= 3; i++) {
     var overlayImg = document.getElementById('overlay-img-' + i);
     if (overlayImg) {
