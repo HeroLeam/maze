@@ -1,10 +1,13 @@
 body {
+  background-color: black;
+  color: white;
+  height: 100vh;
+}
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: black;
-  color: white;
 }
 
 .container {
@@ -65,4 +68,17 @@ button {
 
 button:hover {
   background-color: lightgray;
+}
+
+footer {
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: white;
+  margin-top: auto;
+  text-align: center;
+}
+
+footer>a:hover {
+  color: cyan;
+  font-size: 1.1em;
 }

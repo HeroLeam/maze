@@ -15,268 +15,274 @@
 </head>
 
 <body>
-    <div class="container">
-        <p id="data-atual"></p>
-        <img src="./src/image/mapa.png" alt="Imagem">
-        <div class="options-box">
-            <div class="option-group">
-                <label for="saida-certa">✔️ Saída Certa </label>
-                <select id="saida-certa" name="saida-certa">
-                    <option>-----</option>
-                    <option value="scge">Guard Esquerda</option>
-                    <option value="scgd">Guard Direita</option>
-                    <option value="scbe">Biblioteca Esquerda</option>
-                    <option value="scbd">Biblioteca Direita</option>
-                    <option value="scpfe">Ponte Fina Esquerda</option>
-                    <option value="scpfd">Ponte Fina Direita</option>
-                    <option value="scilc">Ilha L Cima</option>
-                    <option value="scilb">Ilha L Baixo</option>
-                    <option value="sccc">Coluna Cima</option>
-                    <option value="sccb">Coluna Baixo</option>
-                    <option value="scpge">Ponte Grossa Esquerda</option>
-                    <option value="scpgd">Ponte Grossa Direita</option>
-                </select>
-            </div>
-            <div class="option-group">
-                <label for="saida-errada">❌ Saída Errada</label>
-                <select id="saida-errada" name="saida-errada">
-                    <option>-----</option>
-                    <option value="sege">Guard Esquerda</option>
-                    <option value="segd">Guard Direita</option>
-                    <option value="sebe">Biblioteca Esquerda</option>
-                    <option value="sebd">Biblioteca Direita</option>
-                    <option value="sepfe">Ponte Fina Esquerda</option>
-                    <option value="sepfd">Ponte Fina Direita</option>
-                    <option value="seilc">Ilha L Cima</option>
-                    <option value="seilb">Ilha L Baixo</option>
-                    <option value="secc">Coluna Cima</option>
-                    <option value="secb">Coluna Baixo</option>
-                    <option value="sepge">Ponte Grossa Esquerda</option>
-                    <option value="sepgd">Ponte Grossa Direita</option>
-                </select>
-            </div>
-            <div class="option-group">
-                <label for="guard-esquerda" style="color: #ff0000;">01 - Guard Esquerda</label>
-                <select id="guard-esquerda" name="guard-esquerda">
-                    <option>-----</option>
-                    <option value="gege">Guard Esquerda</option>
-                    <option value="gegd">Guard Direita</option>
-                    <option value="gebe">Biblioteca Esquerda</option>
-                    <option value="gebd">Biblioteca Direita</option>
-                    <option value="gepfe">Ponte Fina Esquerda</option>
-                    <option value="gepfd">Ponte Fina Direita</option>
-                    <option value="geilc">Ilha L Cima</option>
-                    <option value="geilb">Ilha L Baixo</option>
-                    <option value="gecc">Coluna Cima</option>
-                    <option value="gecb">Coluna Baixo</option>
-                    <option value="gepge">Ponte Grossa Esquerda</option>
-                    <option value="gepgd">Ponte Grossa Direita</option>
-                </select>
-            </div>
-            <div class="option-group">
-                <label for="guard-direita" style="color: #ff8080;">02 - Guard Direita</label>
-                <select id="guard-direita" name="guard-direita">
-                    <option>-----</option>
-                    <option value="gdge">Guard Esquerda</option>
-                    <option value="gdgd">Guard Direita</option>
-                    <option value="gdbe">Biblioteca Esquerda</option>
-                    <option value="gdbd">Biblioteca Direita</option>
-                    <option value="gdpfe">Ponte Fina Esquerda</option>
-                    <option value="gdpfd">Ponte Fina Direita</option>
-                    <option value="gdilc">Ilha L Cima</option>
-                    <option value="gdilb">Ilha L Baixo</option>
-                    <option value="gdcc">Coluna Cima</option>
-                    <option value="gdcb">Coluna Baixo</option>
-                    <option value="gdpge">Ponte Grossa Esquerda</option>
-                    <option value="gdpgd">Ponte Grossa Direita</option>
-                </select>
-            </div>
-            <div class="option-group">
-                <label for="biblioteca-esquerda" style="color: #ff7f00;">03 - Biblioteca Esquerda</label>
-                <select id="biblioteca-esquerda" name="biblioteca-esquerda">
-                    <option>-----</option>
-                    <option value="bege">Guard Esquerda</option>
-                    <option value="begd">Guard Direita</option>
-                    <option value="bebe">Biblioteca Esquerda</option>
-                    <option value="bebd">Biblioteca Direita</option>
-                    <option value="bepfe">Ponte Fina Esquerda</option>
-                    <option value="bepfd">Ponte Fina Direita</option>
-                    <option value="beilc">Ilha L Cima</option>
-                    <option value="beilb">Ilha L Baixo</option>
-                    <option value="becc">Coluna Cima</option>
-                    <option value="becb">Coluna Baixo</option>
-                    <option value="bepge">Ponte Grossa Esquerda</option>
-                    <option value="bepgd">Ponte Grossa Direita</option>
-                </select>
-            </div>
-            <div class="option-group">
-                <label for="biblioteca-direta" style="color: #ffbf80;">04 - Biblioteca Direita</label>
-                <select id="biblioteca-direta" name="biblioteca-direta">
-                    <option>-----</option>
-                    <option value="bdge">Guard Esquerda</option>
-                    <option value="bdgd">Guard Direita</option>
-                    <option value="bdbe">Biblioteca Esquerda</option>
-                    <option value="bdbd">Biblioteca Direita</option>
-                    <option value="bdpfe">Ponte Fina Esquerda</option>
-                    <option value="bdpfd">Ponte Fina Direita</option>
-                    <option value="bdilc">Ilha L Cima</option>
-                    <option value="bdilb">Ilha L Baixo</option>
-                    <option value="bdcc">Coluna Cima</option>
-                    <option value="bdcb">Coluna Baixo</option>
-                    <option value="bdpge">Ponte Grossa Esquerda</option>
-                    <option value="bdpgd">Ponte Grossa Direita</option>
-                </select>
-            </div>
-            <div class="option-group">
-                <label for="ponte-fina-esquerda" style="color: #ffff00;">05 - Ponte Fina Esquerda</label>
-                <select id="ponte-fina-esquerda" name="ponte-fina-esquerda">
-                    <option>-----</option>
-                    <option value="pfege">Guard Esquerda</option>
-                    <option value="pfegd">Guard Direita</option>
-                    <option value="pfebe">Biblioteca Esquerda</option>
-                    <option value="pfebd">Biblioteca Direita</option>
-                    <option value="pfepfe">Ponte Fina Esquerda</option>
-                    <option value="pfepfd">Ponte Fina Direita</option>
-                    <option value="pfeilc">Ilha L Cima</option>
-                    <option value="pfeilb">Ilha L Baixo</option>
-                    <option value="pfecc">Coluna Cima</option>
-                    <option value="pfecb">Coluna Baixo</option>
-                    <option value="pfepge">Ponte Grossa Esquerda</option>
-                    <option value="pfepgd">Ponte Grossa Direita</option>
-                </select>
-            </div>
-            <div class="option-group">
-                <label for="ponte-fina-direita" style="color: #aaff00;">06 - Ponte Fina Direita</label>
-                <select id="ponte-fina-direita" name="ponte-fina-direita">
-                    <option>-----</option>
-                    <option value="pfdge">Guard Esquerda</option>
-                    <option value="pfdgd">Guard Direita</option>
-                    <option value="pfdbe">Biblioteca Esquerda</option>
-                    <option value="pfdbd">Biblioteca Direita</option>
-                    <option value="pfdpfe">Ponte Fina Esquerda</option>
-                    <option value="pfdpfd">Ponte Fina Direita</option>
-                    <option value="pfdilc">Ilha L Cima</option>
-                    <option value="pfdilb">Ilha L Baixo</option>
-                    <option value="pfdcc">Coluna Cima</option>
-                    <option value="pfdcb">Coluna Baixo</option>
-                    <option value="pfdpge">Ponte Grossa Esquerda</option>
-                    <option value="pfdpgd">Ponte Grossa Direita</option>
-                </select>
-            </div>
-            <div class="option-group">
-                <label for="ilha-l-cima" style="color: #00ff80;">07 - Ilha L Cima</label>
-                <select id="ilha-l-cima" name="ilha-l-cima">
-                    <option>-----</option>
-                    <option value="ilcge">Guard Esquerda</option>
-                    <option value="ilcgd">Guard Direita</option>
-                    <option value="ilcbe">Biblioteca Esquerda</option>
-                    <option value="ilcbd">Biblioteca Direita</option>
-                    <option value="ilcpfe">Ponte Fina Esquerda</option>
-                    <option value="ilcpfd">Ponte Fina Direita</option>
-                    <option value="ilcilc">Ilha L Cima</option>
-                    <option value="ilcilb">Ilha L Baixo</option>
-                    <option value="ilccc">Coluna Cima</option>
-                    <option value="ilccb">Coluna Baixo</option>
-                    <option value="ilcpge">Ponte Grossa Esquerda</option>
-                    <option value="ilcpgd">Ponte Grossa Direita</option>
-                </select>
-            </div>
-            <div class="option-group">
-                <label for="ilha-l-baixo" style="color: #00ffff;">08 - Ilha L Baixo</label>
-                <select id="ilha-l-baixo" name="ilha-l-baixo">
-                    <option>-----</option>
-                    <option value="ilbge">Guard Esquerda</option>
-                    <option value="ilbgd">Guard Direita</option>
-                    <option value="ilbbe">Biblioteca Esquerda</option>
-                    <option value="ilbbd">Biblioteca Direita</option>
-                    <option value="ilbpfe">Ponte Fina Esquerda</option>
-                    <option value="ilbpfd">Ponte Fina Direita</option>
-                    <option value="ilbilc">Ilha L Cima</option>
-                    <option value="ilbilb">Ilha L Baixo</option>
-                    <option value="ilbcc">Coluna Cima</option>
-                    <option value="ilbcb">Coluna Baixo</option>
-                    <option value="ilbpge">Ponte Grossa Esquerda</option>
-                    <option value="ilbpgd">Ponte Grossa Direita</option>
-                </select>
-            </div>
-            <div class="option-group">
-                <label for="coluna-cima" style="color: #00aaff;">09 - Coluna Cima</label>
-                <select id="coluna-cima" name="coluna-cima">
-                    <option>-----</option>
-                    <option value="ccge">Guard Esquerda</option>
-                    <option value="ccgd">Guard Direita</option>
-                    <option value="ccbe">Biblioteca Esquerda</option>
-                    <option value="ccbd">Biblioteca Direita</option>
-                    <option value="ccpfe">Ponte Fina Esquerda</option>
-                    <option value="ccpfd">Ponte Fina Direita</option>
-                    <option value="ccilc">Ilha L Cima</option>
-                    <option value="ccilb">Ilha L Baixo</option>
-                    <option value="cccc">Coluna Cima</option>
-                    <option value="cccb">Coluna Baixo</option>
-                    <option value="ccpge">Ponte Grossa Esquerda</option>
-                    <option value="ccpgd">Ponte Grossa Direita</option>
-                </select>
-            </div>
-            <div class="option-group">
-                <label for="coluna-baixo" style="color: #0000ff;">10 - Coluna Baixo</label>
-                <select id="coluna-baixo" name="coluna-baixo">
-                    <option>-----</option>
-                    <option value="cbge">Guard Esquerda</option>
-                    <option value="cbgd">Guard Direita</option>
-                    <option value="cbbe">Biblioteca Esquerda</option>
-                    <option value="cbbd">Biblioteca Direita</option>
-                    <option value="cbpfe">Ponte Fina Esquerda</option>
-                    <option value="cbpfd">Ponte Fina Direita</option>
-                    <option value="cbilc">Ilha L Cima</option>
-                    <option value="cbilb">Ilha L Baixo</option>
-                    <option value="cbcc">Coluna Cima</option>
-                    <option value="cbcb">Coluna Baixo</option>
-                    <option value="cbpge">Ponte Grossa Esquerda</option>
-                    <option value="cbpgd">Ponte Grossa Direita</option>
-                </select>
-            </div>
-            <div class="option-group">
-                <label for="ponte-grossa-esquerda" style="color: #aa00ff;">11 - Ponte Grossa Esquerda</label>
-                <select id="ponte-grossa-esquerda" name="ponte-grossa-esquerda">
-                    <option>-----</option>
-                    <option value="pgege">Guard Esquerda</option>
-                    <option value="pgegd">Guard Direita</option>
-                    <option value="pgebe">Biblioteca Esquerda</option>
-                    <option value="pgebd">Biblioteca Direita</option>
-                    <option value="pgepfe">Ponte Fina Esquerda</option>
-                    <option value="pgepfd">Ponte Fina Direita</option>
-                    <option value="pgeilc">Ilha L Cima</option>
-                    <option value="pgeilb">Ilha L Baixo</option>
-                    <option value="pgecc">Coluna Cima</option>
-                    <option value="pgecb">Coluna Baixo</option>
-                    <option value="pgepge">Ponte Grossa Esquerda</option>
-                    <option value="pgepgd">Ponte Grossa Direita</option>
-                </select>
-            </div>
-            <div class="option-group">
-                <label for="ponte-grossa-direita" style="color: #ff007f;">12 - Ponte Grossa Direita</label>
-                <select id="ponte-grossa-direita" name="ponte-grossa-direita">
-                    <option>-----</option>
-                    <option value="pgdge">Guard Esquerda</option>
-                    <option value="pgdgd">Guard Direita</option>
-                    <option value="pgdbe">Biblioteca Esquerda</option>
-                    <option value="pgdbd">Biblioteca Direita</option>
-                    <option value="pgdpfe">Ponte Fina Esquerda</option>
-                    <option value="pgdpfd">Ponte Fina Direita</option>
-                    <option value="pgdilc">Ilha L Cima</option>
-                    <option value="pgdilb">Ilha L Baixo</option>
-                    <option value="pgdcc">Coluna Cima</option>
-                    <option value="pgdcb">Coluna Baixo</option>
-                    <option value="pgdpge">Ponte Grossa Esquerda</option>
-                    <option value="pgdpgd">Ponte Grossa Direita</option>
-                </select>
-            </div>
-            <div class="botoes">
-                <button id="reset-btn">Resetar Seleção</button>
-                <button id="download-btn">Baixar Imagem</button>
+    <main>
+        <div class="container">
+            <p id="data-atual"></p>
+            <img src="./src/image/mapa.png" alt="Imagem">
+            <div class="options-box">
+                <div class="option-group">
+                    <label for="saida-certa">✔️ Saída Certa </label>
+                    <select id="saida-certa" name="saida-certa">
+                        <option>-----</option>
+                        <option value="scge">Guard Esquerda</option>
+                        <option value="scgd">Guard Direita</option>
+                        <option value="scbe">Biblioteca Esquerda</option>
+                        <option value="scbd">Biblioteca Direita</option>
+                        <option value="scpfe">Ponte Fina Esquerda</option>
+                        <option value="scpfd">Ponte Fina Direita</option>
+                        <option value="scilc">Ilha L Cima</option>
+                        <option value="scilb">Ilha L Baixo</option>
+                        <option value="sccc">Coluna Cima</option>
+                        <option value="sccb">Coluna Baixo</option>
+                        <option value="scpge">Ponte Grossa Esquerda</option>
+                        <option value="scpgd">Ponte Grossa Direita</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="saida-errada">❌ Saída Errada</label>
+                    <select id="saida-errada" name="saida-errada">
+                        <option>-----</option>
+                        <option value="sege">Guard Esquerda</option>
+                        <option value="segd">Guard Direita</option>
+                        <option value="sebe">Biblioteca Esquerda</option>
+                        <option value="sebd">Biblioteca Direita</option>
+                        <option value="sepfe">Ponte Fina Esquerda</option>
+                        <option value="sepfd">Ponte Fina Direita</option>
+                        <option value="seilc">Ilha L Cima</option>
+                        <option value="seilb">Ilha L Baixo</option>
+                        <option value="secc">Coluna Cima</option>
+                        <option value="secb">Coluna Baixo</option>
+                        <option value="sepge">Ponte Grossa Esquerda</option>
+                        <option value="sepgd">Ponte Grossa Direita</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="guard-esquerda" style="color: #ff0000;">01 - Guard Esquerda</label>
+                    <select id="guard-esquerda" name="guard-esquerda">
+                        <option>-----</option>
+                        <option value="gege">Guard Esquerda</option>
+                        <option value="gegd">Guard Direita</option>
+                        <option value="gebe">Biblioteca Esquerda</option>
+                        <option value="gebd">Biblioteca Direita</option>
+                        <option value="gepfe">Ponte Fina Esquerda</option>
+                        <option value="gepfd">Ponte Fina Direita</option>
+                        <option value="geilc">Ilha L Cima</option>
+                        <option value="geilb">Ilha L Baixo</option>
+                        <option value="gecc">Coluna Cima</option>
+                        <option value="gecb">Coluna Baixo</option>
+                        <option value="gepge">Ponte Grossa Esquerda</option>
+                        <option value="gepgd">Ponte Grossa Direita</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="guard-direita" style="color: #ff8080;">02 - Guard Direita</label>
+                    <select id="guard-direita" name="guard-direita">
+                        <option>-----</option>
+                        <option value="gdge">Guard Esquerda</option>
+                        <option value="gdgd">Guard Direita</option>
+                        <option value="gdbe">Biblioteca Esquerda</option>
+                        <option value="gdbd">Biblioteca Direita</option>
+                        <option value="gdpfe">Ponte Fina Esquerda</option>
+                        <option value="gdpfd">Ponte Fina Direita</option>
+                        <option value="gdilc">Ilha L Cima</option>
+                        <option value="gdilb">Ilha L Baixo</option>
+                        <option value="gdcc">Coluna Cima</option>
+                        <option value="gdcb">Coluna Baixo</option>
+                        <option value="gdpge">Ponte Grossa Esquerda</option>
+                        <option value="gdpgd">Ponte Grossa Direita</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="biblioteca-esquerda" style="color: #ff7f00;">03 - Biblioteca Esquerda</label>
+                    <select id="biblioteca-esquerda" name="biblioteca-esquerda">
+                        <option>-----</option>
+                        <option value="bege">Guard Esquerda</option>
+                        <option value="begd">Guard Direita</option>
+                        <option value="bebe">Biblioteca Esquerda</option>
+                        <option value="bebd">Biblioteca Direita</option>
+                        <option value="bepfe">Ponte Fina Esquerda</option>
+                        <option value="bepfd">Ponte Fina Direita</option>
+                        <option value="beilc">Ilha L Cima</option>
+                        <option value="beilb">Ilha L Baixo</option>
+                        <option value="becc">Coluna Cima</option>
+                        <option value="becb">Coluna Baixo</option>
+                        <option value="bepge">Ponte Grossa Esquerda</option>
+                        <option value="bepgd">Ponte Grossa Direita</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="biblioteca-direta" style="color: #ffbf80;">04 - Biblioteca Direita</label>
+                    <select id="biblioteca-direta" name="biblioteca-direta">
+                        <option>-----</option>
+                        <option value="bdge">Guard Esquerda</option>
+                        <option value="bdgd">Guard Direita</option>
+                        <option value="bdbe">Biblioteca Esquerda</option>
+                        <option value="bdbd">Biblioteca Direita</option>
+                        <option value="bdpfe">Ponte Fina Esquerda</option>
+                        <option value="bdpfd">Ponte Fina Direita</option>
+                        <option value="bdilc">Ilha L Cima</option>
+                        <option value="bdilb">Ilha L Baixo</option>
+                        <option value="bdcc">Coluna Cima</option>
+                        <option value="bdcb">Coluna Baixo</option>
+                        <option value="bdpge">Ponte Grossa Esquerda</option>
+                        <option value="bdpgd">Ponte Grossa Direita</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="ponte-fina-esquerda" style="color: #ffff00;">05 - Ponte Fina Esquerda</label>
+                    <select id="ponte-fina-esquerda" name="ponte-fina-esquerda">
+                        <option>-----</option>
+                        <option value="pfege">Guard Esquerda</option>
+                        <option value="pfegd">Guard Direita</option>
+                        <option value="pfebe">Biblioteca Esquerda</option>
+                        <option value="pfebd">Biblioteca Direita</option>
+                        <option value="pfepfe">Ponte Fina Esquerda</option>
+                        <option value="pfepfd">Ponte Fina Direita</option>
+                        <option value="pfeilc">Ilha L Cima</option>
+                        <option value="pfeilb">Ilha L Baixo</option>
+                        <option value="pfecc">Coluna Cima</option>
+                        <option value="pfecb">Coluna Baixo</option>
+                        <option value="pfepge">Ponte Grossa Esquerda</option>
+                        <option value="pfepgd">Ponte Grossa Direita</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="ponte-fina-direita" style="color: #aaff00;">06 - Ponte Fina Direita</label>
+                    <select id="ponte-fina-direita" name="ponte-fina-direita">
+                        <option>-----</option>
+                        <option value="pfdge">Guard Esquerda</option>
+                        <option value="pfdgd">Guard Direita</option>
+                        <option value="pfdbe">Biblioteca Esquerda</option>
+                        <option value="pfdbd">Biblioteca Direita</option>
+                        <option value="pfdpfe">Ponte Fina Esquerda</option>
+                        <option value="pfdpfd">Ponte Fina Direita</option>
+                        <option value="pfdilc">Ilha L Cima</option>
+                        <option value="pfdilb">Ilha L Baixo</option>
+                        <option value="pfdcc">Coluna Cima</option>
+                        <option value="pfdcb">Coluna Baixo</option>
+                        <option value="pfdpge">Ponte Grossa Esquerda</option>
+                        <option value="pfdpgd">Ponte Grossa Direita</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="ilha-l-cima" style="color: #00ff80;">07 - Ilha L Cima</label>
+                    <select id="ilha-l-cima" name="ilha-l-cima">
+                        <option>-----</option>
+                        <option value="ilcge">Guard Esquerda</option>
+                        <option value="ilcgd">Guard Direita</option>
+                        <option value="ilcbe">Biblioteca Esquerda</option>
+                        <option value="ilcbd">Biblioteca Direita</option>
+                        <option value="ilcpfe">Ponte Fina Esquerda</option>
+                        <option value="ilcpfd">Ponte Fina Direita</option>
+                        <option value="ilcilc">Ilha L Cima</option>
+                        <option value="ilcilb">Ilha L Baixo</option>
+                        <option value="ilccc">Coluna Cima</option>
+                        <option value="ilccb">Coluna Baixo</option>
+                        <option value="ilcpge">Ponte Grossa Esquerda</option>
+                        <option value="ilcpgd">Ponte Grossa Direita</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="ilha-l-baixo" style="color: #00ffff;">08 - Ilha L Baixo</label>
+                    <select id="ilha-l-baixo" name="ilha-l-baixo">
+                        <option>-----</option>
+                        <option value="ilbge">Guard Esquerda</option>
+                        <option value="ilbgd">Guard Direita</option>
+                        <option value="ilbbe">Biblioteca Esquerda</option>
+                        <option value="ilbbd">Biblioteca Direita</option>
+                        <option value="ilbpfe">Ponte Fina Esquerda</option>
+                        <option value="ilbpfd">Ponte Fina Direita</option>
+                        <option value="ilbilc">Ilha L Cima</option>
+                        <option value="ilbilb">Ilha L Baixo</option>
+                        <option value="ilbcc">Coluna Cima</option>
+                        <option value="ilbcb">Coluna Baixo</option>
+                        <option value="ilbpge">Ponte Grossa Esquerda</option>
+                        <option value="ilbpgd">Ponte Grossa Direita</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="coluna-cima" style="color: #00aaff;">09 - Coluna Cima</label>
+                    <select id="coluna-cima" name="coluna-cima">
+                        <option>-----</option>
+                        <option value="ccge">Guard Esquerda</option>
+                        <option value="ccgd">Guard Direita</option>
+                        <option value="ccbe">Biblioteca Esquerda</option>
+                        <option value="ccbd">Biblioteca Direita</option>
+                        <option value="ccpfe">Ponte Fina Esquerda</option>
+                        <option value="ccpfd">Ponte Fina Direita</option>
+                        <option value="ccilc">Ilha L Cima</option>
+                        <option value="ccilb">Ilha L Baixo</option>
+                        <option value="cccc">Coluna Cima</option>
+                        <option value="cccb">Coluna Baixo</option>
+                        <option value="ccpge">Ponte Grossa Esquerda</option>
+                        <option value="ccpgd">Ponte Grossa Direita</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="coluna-baixo" style="color: #0000ff;">10 - Coluna Baixo</label>
+                    <select id="coluna-baixo" name="coluna-baixo">
+                        <option>-----</option>
+                        <option value="cbge">Guard Esquerda</option>
+                        <option value="cbgd">Guard Direita</option>
+                        <option value="cbbe">Biblioteca Esquerda</option>
+                        <option value="cbbd">Biblioteca Direita</option>
+                        <option value="cbpfe">Ponte Fina Esquerda</option>
+                        <option value="cbpfd">Ponte Fina Direita</option>
+                        <option value="cbilc">Ilha L Cima</option>
+                        <option value="cbilb">Ilha L Baixo</option>
+                        <option value="cbcc">Coluna Cima</option>
+                        <option value="cbcb">Coluna Baixo</option>
+                        <option value="cbpge">Ponte Grossa Esquerda</option>
+                        <option value="cbpgd">Ponte Grossa Direita</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="ponte-grossa-esquerda" style="color: #aa00ff;">11 - Ponte Grossa Esquerda</label>
+                    <select id="ponte-grossa-esquerda" name="ponte-grossa-esquerda">
+                        <option>-----</option>
+                        <option value="pgege">Guard Esquerda</option>
+                        <option value="pgegd">Guard Direita</option>
+                        <option value="pgebe">Biblioteca Esquerda</option>
+                        <option value="pgebd">Biblioteca Direita</option>
+                        <option value="pgepfe">Ponte Fina Esquerda</option>
+                        <option value="pgepfd">Ponte Fina Direita</option>
+                        <option value="pgeilc">Ilha L Cima</option>
+                        <option value="pgeilb">Ilha L Baixo</option>
+                        <option value="pgecc">Coluna Cima</option>
+                        <option value="pgecb">Coluna Baixo</option>
+                        <option value="pgepge">Ponte Grossa Esquerda</option>
+                        <option value="pgepgd">Ponte Grossa Direita</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="ponte-grossa-direita" style="color: #ff007f;">12 - Ponte Grossa Direita</label>
+                    <select id="ponte-grossa-direita" name="ponte-grossa-direita">
+                        <option>-----</option>
+                        <option value="pgdge">Guard Esquerda</option>
+                        <option value="pgdgd">Guard Direita</option>
+                        <option value="pgdbe">Biblioteca Esquerda</option>
+                        <option value="pgdbd">Biblioteca Direita</option>
+                        <option value="pgdpfe">Ponte Fina Esquerda</option>
+                        <option value="pgdpfd">Ponte Fina Direita</option>
+                        <option value="pgdilc">Ilha L Cima</option>
+                        <option value="pgdilb">Ilha L Baixo</option>
+                        <option value="pgdcc">Coluna Cima</option>
+                        <option value="pgdcb">Coluna Baixo</option>
+                        <option value="pgdpge">Ponte Grossa Esquerda</option>
+                        <option value="pgdpgd">Ponte Grossa Direita</option>
+                    </select>
+                </div>
+                <div class="botoes">
+                    <button id="reset-btn">Resetar Seleção</button>
+                    <button id="download-btn">Baixar Imagem</button>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer>
+        <a href="https://heroleam.github.io/portfolio" target="_blank">by HeroLeam</a>
+    </footer>
 
     <script src="./src/js/select.js"></script>
     <script src="./src/js/download.js"></script>
