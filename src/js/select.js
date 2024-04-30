@@ -12,7 +12,7 @@ function trocarImagem(selectId, imgSrc, index) {
     document.querySelector('.container').appendChild(overlayImg);
   }
 
-  if (imgSrc === '-----') {
+  if (imgSrc === 'nenhum') {
     overlayImg.style.display = 'none';
   } else {
     overlayImg.src = 'src/image/' + imgSrc + '.png';
@@ -21,27 +21,29 @@ function trocarImagem(selectId, imgSrc, index) {
 }
 
 function resetarSelecao() {
-  document.getElementById('saida-certa').value = '-----';
-  document.getElementById('saida-errada').value = '-----';
-  document.getElementById('guard-esquerda').value = '-----';
-  document.getElementById('guard-direita').value = '-----';
-  document.getElementById('biblioteca-esquerda').value = '-----';
-  document.getElementById('biblioteca-direta').value = '-----';
-  document.getElementById('ponte-fina-esquerda').value = '-----';
-  document.getElementById('ponte-fina-direita').value = '-----';
-  document.getElementById('ilha-l-cima').value = '-----';
-  document.getElementById('ilha-l-baixo').value = '-----';
-  document.getElementById('coluna-cima').value = '-----';
-  document.getElementById('coluna-baixo').value = '-----';
-  document.getElementById('ponte-grossa-esquerda').value = '-----';
-  document.getElementById('ponte-grossa-direita').value = '-----';
-  
-  for (var i = 1; i <= 3; i++) {
-    var overlayImg = document.getElementById('overlay-img-' + i);
-    if (overlayImg) {
-      overlayImg.style.display = 'none';
-    }
-  }
+  document.getElementById('saida-certa').value = 'nenhum';
+  document.getElementById('saida-errada').value = 'nenhum';
+  document.getElementById('guard-esquerda').value = 'nenhum';
+  document.getElementById('guard-direita').value = 'nenhum';
+  document.getElementById('biblioteca-esquerda').value = 'nenhum';
+  document.getElementById('biblioteca-direta').value = 'nenhum';
+  document.getElementById('ponte-fina-esquerda').value = 'nenhum';
+  document.getElementById('ponte-fina-direita').value = 'nenhum';
+  document.getElementById('ilha-l-cima').value = 'nenhum';
+  document.getElementById('ilha-l-baixo').value = 'nenhum';
+  document.getElementById('coluna-cima').value = 'nenhum';
+  document.getElementById('coluna-baixo').value = 'nenhum';
+  document.getElementById('ponte-grossa-esquerda').value = 'nenhum';
+  document.getElementById('ponte-grossa-direita').value = 'nenhum';
+
+  var selects = document.querySelectorAll('select');
+  selects.forEach(function(select) {
+    var event = new Event('change', {
+      bubbles: true,
+      cancelable: true,
+    });
+    select.dispatchEvent(event);
+  });
 }
 
 document.getElementById('saida-certa').addEventListener('change', function() {
