@@ -5,7 +5,7 @@
 Projeto próprio de um mapa interativo de uma quest do jogo Tibia.
 
 ## Layout web
-![Web 1](./src/image/demo.png)
+![Web 1](./src/image/demo.jpg)
 
 # Tecnologias utilizadas
 ## Front end
