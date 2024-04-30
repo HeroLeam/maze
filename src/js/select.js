@@ -5,7 +5,7 @@ function trocarImagem(selectId, imgSrc, index) {
     overlayImg = new Image();
     overlayImg.id = 'overlay-img-' + index;
     overlayImg.style.position = 'absolute';
-    overlayImg.style.top = '0';
+    overlayImg.style.top = '1';
     overlayImg.style.left = '0';
     overlayImg.style.display = 'none';
     overlayImg.style.zIndex = '1';
