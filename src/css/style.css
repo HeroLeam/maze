@@ -1,20 +1,19 @@
 body {
   background: url(../image/pattern.jpg);
-  color: white;
-  height: 100vh;
   margin: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 main {
-  border: 2px outset rgba(255,255,255,0.25);
+  border: 2px outset rgba(255, 255, 255, 0.25);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom:20px;
 }
 
 .container {
@@ -25,7 +24,7 @@ main {
   position: relative;
 }
 
-img{
+img {
   padding: 20px;
 }
 
@@ -50,6 +49,7 @@ select {
 .options-box {
   flex-grow: 1;
   padding: 20px;
+  align-self: flex-start;
 }
 
 .option-group {
@@ -69,7 +69,7 @@ label {
 
 button {
   background: url(../image/pattern.jpg);
-  border: 2px outset rgba(255,255,255,0.25);
+  border: 2px outset rgba(255, 255, 255, 0.25);
   color: #acacac;
   padding: 8px 16px;
   margin-bottom: 10px;
@@ -81,19 +81,23 @@ button:hover {
   color: #c4c4c4;
 }
 
-button:active{
-  border: 2px inset rgba(255,255,255,0.25);
+button:active {
+  border: 2px inset rgba(255, 255, 255, 0.25);
 }
 
-footer>a {
+.bymade {
+  display: flex;
+  justify-content: center;
+}
+
+a {
   color: #acacac;
   border-radius: 10px;
   padding: 8px 16px;
-  font-size: 1.2em;
   letter-spacing: 2px;
   text-align: center;
 }
 
-footer>a:hover {
+a:hover {
   color: #c4c4c4;
 }

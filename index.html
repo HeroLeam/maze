@@ -27,9 +27,27 @@
 <body>
     <main>
         <div class="container">
-            <p id="data-atual"></p>
+            <p id="daily"></p>
             <img src="./src/image/mapa.png" alt="Imagem">
             <div class="options-box">
+                <div class="option-group">
+                    <label for="entrada">💠 Entrada</label>
+                    <select id="entrada" name="entrada">
+                        <option value="nenhum">Nenhum</option>
+                        <option value="ege">01 | Guard Esquerda</option>
+                        <option value="egd">02 | Guard Direita</option>
+                        <option value="ebe">03 | Biblioteca Esquerda</option>
+                        <option value="ebd">04 | Biblioteca Direita</option>
+                        <option value="epfe">05 | Ponte Fina Esquerda</option>
+                        <option value="epfd">06 | Ponte Fina Direita</option>
+                        <option value="eilc">07 | Ilha L Cima</option>
+                        <option value="eilb">08 | Ilha L Baixo</option>
+                        <option value="ecc">09 | Coluna Cima</option>
+                        <option value="ecb">10 | Coluna Baixo</option>
+                        <option value="epge">11 | Ponte Grossa Esquerda</option>
+                        <option value="epgd">12 | Ponte Grossa Direita</option>
+                    </select>
+                </div>
                 <div class="option-group">
                     <label for="saida-certa">✔️ Saída Certa </label>
                     <select id="saida-certa" name="saida-certa">
@@ -66,6 +84,8 @@
                         <option value="sepgd">12 | Ponte Grossa Direita</option>
                     </select>
                 </div>
+            </div>
+            <div class="options-box">
                 <div class="option-group">
                     <label for="guard-esquerda" style="color: #ff0000;">01 | Guard Esquerda</label>
                     <select id="guard-esquerda" name="guard-esquerda">
@@ -286,12 +306,15 @@
                     <button id="reset-btn">Resetar Seleções</button>
                     <button id="download-btn">Baixar Imagem</button>
                 </div>
+                <div class="bymade">
+                    <a href="https://heroleam.github.io/portfolio" target="_blank">by HeroLeam</a>
+                </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <a href="https://heroleam.github.io/portfolio" target="_blank">by HeroLeam</a>
+        
     </footer>
 
     <script src="./src/js/select.js"></script>
