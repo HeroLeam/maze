@@ -51,7 +51,7 @@ document.getElementById('entrada').addEventListener('change', function() {
   trocarImagem('entrada', this.value, 1);
 });
 
-document.getElementById('saida-errada').addEventListener('change', function() {
+document.getElementById('saida-certa').addEventListener('change', function() {
   trocarImagem('saida-certa', this.value, 2);
 });
 
